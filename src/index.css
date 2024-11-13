@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:rgb(56, 125, 253)
+}
+
+.header {
+
+  margin: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: white
+}
+
+.header p {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.course-container {
+  display: flex;
+  overflow-x: auto; /* Scroll bar for horizontal scrolling */
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  
+}
+
+.course-card {
+  min-width: 250px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+
+
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+
+
+}
+.image{
+  background-image: url("../public/snippet1.jpg");
+  height: 300px;
+ min-width: fit-content;
+}
+.course-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.course-info {
+  text-align: center;
+}
+
+.course-type {
+  color: #71f86c;
+  font-size: 0.9rem;
+}
+
+.course-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.course-description,
+.course-sales {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.course-price {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 5px;
+}
+
+.sale-price {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.learn-more {
+   background-color: white;
+
+  color:green;
+  border-color: green;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .course-card {
+    margin-bottom: 20px;
+  }
+}
