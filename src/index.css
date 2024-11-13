@@ -27,7 +27,7 @@ body {
 
 .course-container {
   display: flex;
-  overflow-x: auto; /* Scroll bar for horizontal scrolling */
+  overflow-x: auto;
   gap: 20px;
   padding: 20px;
   scroll-behavior: smooth;
@@ -59,6 +59,21 @@ body {
 }
 .image{
   background-image: url("../public/snippet1.jpg");
+  height: 300px;
+ min-width: fit-content;
+}
+.image1{
+  background-image: url("../public/snippet2.jpg");
+  height: 300px;
+ min-width: fit-content;
+}
+.image2{
+  background-image: url("../public/snippet3.jpg");
+  height: 300px;
+ min-width: fit-content;
+}
+.image3{
+  background-image: url("../public/snippet4.jpg");
   height: 300px;
  min-width: fit-content;
 }
