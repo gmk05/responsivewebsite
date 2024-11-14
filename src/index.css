@@ -35,11 +35,11 @@ body {
 }
 
 .course-card {
+   
   min-width: 250px;
   background: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
   position: relative;
 
 
@@ -60,7 +60,8 @@ body {
 .image{
   background-image: url("../public/snippet1.jpg");
   height: 300px;
- min-width: fit-content;
+   
+ min-width:250px;
 }
 .image1{
   background-image: url("../public/snippet2.jpg");
